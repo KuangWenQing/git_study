@@ -35,6 +35,8 @@ git mv file1 file2
 git rm file			
 git commit -m 'delete file'	# You can 'commit' directly
 
+git commit --amend              # 修改最新提交的 注释
+git rebase -i HEAD~2            # 修改倒数第2 次提交的注释
 
 #---------------------------------------------------#
 # push your repository to the remote github server  #
