@@ -5,3 +5,6 @@
 4. git add filename
 5. git commit -m '注释本次修改做了什么'
 
+## 小提示
+### 当 filename 已经 git add 过， 后续修改可以用 git commit -am 省略 git add
+
