@@ -11,6 +11,9 @@ git log                     # print version information (barring reset operate
 git log --pretty=oneline    # print oneline version info
 git reflog		    # print all version info (includ reset operate
 
+git log --decorate --oneline --graph --all
+# --graph 选项表示让 Git 绘制分支图，--all 表示显示所有分支
+
 #---------------------------------------#
 # very important, Like regret medicine  #
 #---------------------------------------#
@@ -37,6 +40,22 @@ git commit -m 'delete file'	# You can 'commit' directly
 
 git commit --amend              # 修改最新提交的 注释
 git rebase -i HEAD~2            # 修改倒数第2 次提交的注释
+
+
+# 分支
+git branch 分支名       # 创建分支
+git checkout 分支名     # 切换分支
+git checkout -b 新分支  # 创建并切换到 新分支
+
+git checkout HEAD~      # 创建匿名分支
+
+git merge 分支名        # 合并分支
+git branch -d 分支名    # 删除分支
+# 如果试图删除未合并的分支，Git 会提示你“该分支未完全合并
+git branch -D 分支名    # 如果你确定要删除， 请使用该命令
+
+
+
 
 #---------------------------------------------------#
 # push your repository to the remote github server  #
